@@ -6,7 +6,7 @@ else
   USER="33"
 fi
 
-# Container
+# Container.
 bash() {
   docker-compose exec --user $USER app bash
 }
@@ -15,7 +15,7 @@ root() {
   docker-compose exec --user root app bash
 }
 
-# Tools
+# Tools.
 composer() {
     docker-compose exec --user $USER app composer "$@"
 }
@@ -24,13 +24,12 @@ npm() {
     docker-compose exec --user $USER app npm "$@"
 }
 
-# Laravel
-
+# Laravel.
 artisan() {
     docker-compose exec --user $USER app php artisan "$@"
 }
 
-# Packages
+# Packages.
 phpcs() {
     docker-compose exec --user $USER app ./vendor/bin/phpcs
 }

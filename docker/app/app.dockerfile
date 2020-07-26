@@ -55,6 +55,10 @@ RUN a2enmod rewrite
 # Set working directory.
 WORKDIR /var/www/html
 
+# Install NodeJS with node package manager.
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt-get install --yes nodejs
+
 # Install composer. This requires Docker 17.05.
 COPY --from=composer:1 /usr/bin/composer /usr/bin/composer
 
