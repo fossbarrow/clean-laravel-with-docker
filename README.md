@@ -7,6 +7,29 @@ This is a template for Laravel projects thats aimed to run on Docker.
 Included in this template, is simplified controllers and a code style checker
 for the Laravel code standards.
 
+# Usage
+Simply use this template to use it.
+
+See the ([Install & Setup Guide](help/README.md)) to get started.
+
+With this docker template, a dev script is made to ease the development workflow.
+
+```
+$ ./dev.sh composer  - For composer commands
+
+$ ./dev.sh artisan   - For artisan commands
+
+$ ./dev.sh npm       - For npm commands
+
+$ ./dev.sh phpcs     - To check if your project follows the Laravel coding standard
+
+$ ./dev.sh phpcbf    - Attempt to fix coding standard failures
+
+```
+
+More commands are listed in the aforementioned setup guide.
+
+
 ## Project
 This project running on Laravel 7.x, using docker as the development
 environment setup.
