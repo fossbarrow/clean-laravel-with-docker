@@ -60,15 +60,10 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt-get install --yes nodejs
 
 # Install composer. This requires Docker 17.05.
-COPY --from=composer:1 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Set permissions for www-data.
 RUN chown -R www-data:www-data /var/www
-
-# Speed up composer downloads & install phpcs.
-USER www-data
-RUN /usr/bin/composer global require hirak/prestissimo
-USER root
 
 # Add xdebug configuration
 COPY app/xdebug/xdebug.ini /usr/local/etc/php/conf.d/
