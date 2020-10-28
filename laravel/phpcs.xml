@@ -23,12 +23,6 @@
     <rule ref="Generic.Files.LineEndings">
         <exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
     </rule>
-    <rule ref="Generic.Files.LineLength">
-        <properties>
-            <property name="lineLimit" value="90"/>
-            <property name="absoluteLineLimit" value="95"/>
-        </properties>
-    </rule>
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
     <rule ref="Generic.Functions.CallTimePassByReference"/>
@@ -37,13 +31,13 @@
     <rule ref="Generic.Metrics.CyclomaticComplexity">
         <properties>
             <property name="complexity" value="20"/>
-            <property name="absoluteComplexity" value="50"/>
+            <property name="absoluteComplexity" value="5"/>
         </properties>
     </rule>
     <rule ref="Generic.Metrics.NestingLevel">
         <properties>
             <property name="nestingLevel" value="5"/>
-            <property name="absoluteNestingLevel" value="15"/>
+            <property name="absoluteNestingLevel" value="5"/>
         </properties>
     </rule>
     <rule ref="Generic.NamingConventions.ConstructorName"/>
@@ -79,6 +73,10 @@
     </rule>
     <rule ref="PSR2">
         <exclude name="PSR2.ControlStructures.SwitchDeclaration.BodyOnNextLineCASE" />
+        <properties>
+            <property name="lineLimit" value="130"/>
+            <property name="absoluteLineLimit" value="135"/>
+        </properties>
     </rule>
     <rule ref="Squiz.Arrays.ArrayDeclaration">
         <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" />
@@ -93,6 +91,7 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.NoKeySpecified" />
         <exclude name="Squiz.Arrays.ArrayDeclaration.KeySpecified" />
     </rule>
+    <rule ref="Squiz.PHP.CommentedOutCode"/>
     <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
     <rule ref="Squiz.PHP.DiscouragedFunctions">
         <properties>
@@ -101,12 +100,14 @@
     </rule>
     <rule ref="Squiz.PHP.Eval"/>
     <rule ref="Squiz.PHP.GlobalKeyword"/>
+    <rule ref="Squiz.PHP.Heredoc"/>
     <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
     <rule ref="Squiz.PHP.NonExecutableCode"/>
     <rule ref="Squiz.Scope.MemberVarScope"/>
     <rule ref="Squiz.Scope.MethodScope"/>
     <rule ref="Squiz.Scope.StaticThisUsage"/>
     <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
     <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
@@ -155,6 +156,5 @@
     <exclude-pattern>*/resources/lang/*</exclude-pattern>
 
     <arg name="colors"/>
-    <arg value="spv"/>
     <ini name="memory_limit" value="128M"/>
 </ruleset>
