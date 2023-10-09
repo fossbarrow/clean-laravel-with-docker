@@ -1,5 +1,5 @@
-![Laravel logo](help/logo.jpg "Laravel 7")
-> Template made by fossbarrow IO (https://fossbarrow.io/)
+![Laravel logo](help/logo.jpg "Laravel 10")
+> Template made by fossbarrow IO (https://github.com/fossbarrow)
 
 # Laravel Docker Template
 This is a template for Laravel projects thats aimed to run on Docker.
@@ -42,8 +42,8 @@ You can learn more about docker and its possibilities at: [Docker.com](https://s
 ## Information
 Specs:
 
-- php 8.1
-- nginx
+- php 8.2
+- Nginx
 - MariaDB 
 
 *Packages included in this template*:
