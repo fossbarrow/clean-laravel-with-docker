@@ -31,7 +31,7 @@ More commands are listed in the aforementioned setup guide.
 
 
 ## Project
-This project running on Laravel 7.x, using docker as the development
+This project running on Laravel 10.x, using docker as the development
 environment setup.
 
 > In order to get the very same environment local as production, and amongst the developers, we use docker to emulate the prod server environment!
@@ -42,9 +42,9 @@ You can learn more about docker and its possibilities at: [Docker.com](https://s
 ## Information
 Specs:
 
-- php 7.4
-- apache 2.4
-- mysql 5.7
+- php 8.1
+- nginx
+- MariaDB 
 
 *Packages included in this template*:
 
